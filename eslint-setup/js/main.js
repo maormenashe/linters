@@ -1,5 +1,5 @@
 function checkPositive(number) {
-  if (number > 0) return true;
+  if (number === 0) return true;
 }
 
-console.log(checkPositive(10));
+checkPositive(5);
