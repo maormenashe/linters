@@ -5,7 +5,7 @@ try {
     .toString()
     .trim();
 
-  const regex = /^(feature|bugfix|hotfix|release)\/[a-z0-9._-]+$/;
+  const regex = /^(main|feature|bugfix|hotfix|release)\/[a-z0-9._-]+$/;
 
   if (!regex.test(branchName)) {
     console.error(`Invalid branch name: ${branchName}`);
