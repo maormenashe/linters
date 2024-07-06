@@ -4,4 +4,4 @@ function checkPositive(number) {
 
 checkPositive(5);
 debugger;
-console.log("Test");
+console.log("mama");

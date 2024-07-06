@@ -2,6 +2,14 @@ import globals from "globals";
 import pluginJs from "@eslint/js";
 
 export default [
+  {
+    ignores: [
+      // '**/dev/*',
+      "**/dist/*",
+      // '**/tests/*',
+      // 'tsconfig.json',
+    ],
+  },
   { files: ["**/*.js"], languageOptions: { sourceType: "script" } },
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
