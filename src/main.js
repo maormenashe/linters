@@ -1,5 +1,5 @@
 function checkPositive(number) {
-  const foo = 4;
+  const foo = 5;
   if (number === foo) return true;
   return false;
 }
