@@ -1,0 +1,1 @@
+node scripts/branch-name-lint.mjs
