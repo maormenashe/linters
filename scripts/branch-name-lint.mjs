@@ -11,7 +11,7 @@ const ACCEPTABLE_BRANCH_PREFIXES = [
   'release',
 ];
 const EXEMPT_BRANCHES = ['master', 'main', 'dev', 'develop'];
-const VALID_BRANCH_NAME_PATTERN = /^[a-z0-9._-]+$/;
+const VALID_BRANCH_NAME_PATTERN = /^[a-zA-Z0-9._-]+$/;
 
 function getBranchName() {
   return execSync('git symbolic-ref --short HEAD').toString().trim();
@@ -40,7 +40,7 @@ function printInvalidBranchMessage(branchName) {
   console.error(`Branch name must match one of the following patterns:`);
   console.error(`- ${EXEMPT_BRANCHES.join(', ')}`);
   console.error(
-    `- ${ACCEPTABLE_BRANCH_PREFIXES.map((prefix) => `${prefix}/${ISSUE_PREFIX_REGEX.source}-<branch-name>`).join(', ')}`,
+    `- ${ACCEPTABLE_BRANCH_PREFIXES.map((prefix) => `${prefix}/${ISSUE_PREFIX_REGEX.source}`).join(', ')}`,
   );
   console.error(`Examples:`);
   console.error(`- feature/DLD-123-my-feature`);
