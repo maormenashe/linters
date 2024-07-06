@@ -3,5 +3,3 @@ function checkPositive(number) {
 }
 
 checkPositive(5);
-debugger;
-console.log("mama");

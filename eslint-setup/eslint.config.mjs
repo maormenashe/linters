@@ -20,7 +20,7 @@ export default [
     rules: {
       semi: ["error", "always"],
       indent: ["error", 2],
-      quotes: ["error", "double"],
+      quotes: ["error", "single"],
       "no-extra-semi": "error",
       "no-unused-vars": "error",
       "no-debugger": "warn",
