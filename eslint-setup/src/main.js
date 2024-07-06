@@ -1,7 +1,6 @@
 function checkPositive(number) {
   if (number === 0) return true;
+  return false;
 }
 
 checkPositive(5);
-debugger;
-console.log('Test');
