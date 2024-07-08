@@ -7,7 +7,7 @@
   "rules": {
     "prettier/prettier": [
       true,
-      { "singleQuote": true, "tabWidth": 2, "endOfLine": "lf" }
+      { "singleQuote": true, "tabWidth": 2, "endOfLine": "auto" }
     ],
     "declaration-no-important": true
   }
