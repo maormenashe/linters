@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      true,
+      { "singleQuote": true, "tabWidth": 2, "endOfLine": "lf" }
+    ],
+    "declaration-no-important": true
+  }
+}
